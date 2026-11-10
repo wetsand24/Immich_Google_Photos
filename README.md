@@ -7,10 +7,24 @@ Debian 13, Docker 29.9.3, Immich v3.3.6, immich-go v0.32.0, the Immich Android a
 
 ## What you need
 - A computer that stays on, with Docker (a mini PC or an old laptop works).
-  No Docker yet? Install it with Docker's official guide first: https://docs.docker.com/engine/install/
-  Check: `docker --version` and `docker ps` should both work.
+  No Docker yet? Do step 0 below first.
 - At least 6 GB RAM (Immich's minimum, 8 GB recommended) and enough disk for all your photos plus a bit extra
 - Your Google account
+
+## 0. Install Docker (skip if you already have it)
+On Debian or Ubuntu, Docker's official install script does it all:
+```bash
+sudo apt update && sudo apt install -y curl
+curl -fsSL https://get.docker.com | sudo sh
+sudo usermod -aG docker $USER
+```
+Log out and back in (or reboot) so you can run `docker` without `sudo`. Then check:
+```bash
+docker --version
+docker compose version
+docker ps
+```
+All three should work without errors (`docker ps` shows an empty list, that's fine).
 
 ## 1. Install Immich
 ```bash
