@@ -3,6 +3,8 @@
 The steps and commands from my video, in the order I run them. Tested on 2026-11-09 with:
 Debian 13, Docker 29.9.3, Immich v3.3.6, immich-go v0.32.0, the Immich Android app v3.3.6.
 
+▶️ Video: https://youtu.be/OvFchxPb-2w
+
 ## What you need
 - A computer that stays on, with Docker (a mini PC or an old laptop works).
   No Docker yet? Install it with Docker's official guide first: https://docs.docker.com/engine/install/
